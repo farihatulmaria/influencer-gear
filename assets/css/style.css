@@ -119,6 +119,23 @@ header .container {
 }
 .hero-image img {
 }
+/* band */
+.brand {
+}
+.brand .container {
+}
+.brand-img {
+}
+.brand-img ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.brand-img ul li {
+  text-align: center;
+}
+.brand-img li img {
+}
 /* footer */
 footer {
   background-color: #0a0826;
