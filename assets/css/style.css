@@ -3,7 +3,11 @@
   2. main css
     2.1. header
     2.2. hero
-  3.
+    2.3. brand
+    2.4. products
+    2.5. testimonial
+    2.6. footer
+  3. 
 */
 
 /* =====================
@@ -125,6 +129,9 @@ header .container {
 .brand .container {
 }
 .brand-img {
+  padding: 42px 0;
+  border-top: 2px solid #d1d1d138;
+  border-bottom: 2px solid #d1d1d138;
 }
 .brand-img ul {
   display: grid;
@@ -135,6 +142,51 @@ header .container {
   text-align: center;
 }
 .brand-img li img {
+}
+/* products */
+.products {
+  margin: 100px 0;
+}
+.products h2 {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+.products .container {
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.product {
+  width: 357px;
+  height: 600px;
+  border: 1px solid #0a0826;
+  padding: 15px;
+}
+.product-img {
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-content {
+}
+.product-content h3 {
+}
+.product-content h4 {
+}
+.product-content p {
+}
+.rating {
+}
+.rating p {
+}
+.star {
+}
+.star svg {
 }
 /* footer */
 footer {
