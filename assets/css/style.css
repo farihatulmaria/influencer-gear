@@ -1,6 +1,7 @@
 /* type of contents 
   1. default css 
-  2. 
+  2. main css
+    2.1. header
   3.
 */
 
@@ -10,6 +11,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 ul {
   margin: 0;
@@ -18,8 +20,54 @@ ul {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+/* =====================
+    main css 
+=========================  */
+
+/* header */
+header {
+  padding: 50px 0;
+}
+header .container {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+}
+.logo a {
+  font-weight: bold;
+  font-size: 24px;
+}
+.main-menu {
+}
+.main-menu ul {
+}
+.main-menu li {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  transition: 0.5s;
+}
+.main-menu li:hover {
+  background: #e02c6d;
+  border-radius: 20px;
+}
+.main-menu li:hover a {
+  color: #fff;
+}
+.main-menu li a {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.main-menu a svg {
 }
