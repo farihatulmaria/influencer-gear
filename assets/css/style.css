@@ -119,13 +119,27 @@ header .container {
   font-weight: 600;
   font-size: 16px;
 }
-
+.hero:hover .hero-image img {
+  animation: moveing 10s infinite;
+}
+@keyframes moveing {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
 .hero-image {
   text-align: center;
   width: 440px;
   height: 414px;
 }
 .hero-image img {
+  position: relative;
 }
 /* band */
 .brand {
