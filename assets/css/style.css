@@ -7,7 +7,7 @@
     2.4. products
     2.5. feature
     2.6. footer
-  3. 
+  3. Responsive css 
 */
 
 /* =====================
@@ -32,7 +32,7 @@ a {
   margin: 0 auto;
 }
 button {
-  padding: 10px 24px;
+  padding: 8px 24px;
   background-color: #e02c6d;
   color: #fff;
   border: none;
@@ -42,12 +42,20 @@ button {
   border-radius: 20px;
   margin: 16px 0;
   text-transform: capitalize;
+  position: relative;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #fff;
+  color: #e02c6d;
+  border-color: #e02c6d;
 }
 button svg {
   margin: 0 5px;
 }
 section {
-  margin: 30px 0;
+  margin: 50px 0;
 }
 /* =====================
     main css 
@@ -119,9 +127,7 @@ header .container {
   font-weight: 600;
   font-size: 16px;
 }
-.hero:hover .hero-image img {
-  animation: moveing 10s infinite;
-}
+
 @keyframes moveing {
   0% {
     left: 0px;
@@ -140,6 +146,7 @@ header .container {
 }
 .hero-image img {
   position: relative;
+  animation: moveing 10s infinite;
 }
 /* band */
 .brand {
@@ -166,19 +173,22 @@ header .container {
   margin: 100px 0;
 }
 .section-title {
+  text-transform: capitalize;
   font-weight: 600;
   font-size: 28px;
   text-align: center;
 }
 .products .container {
 }
-.product-container {
+.product-container,
+.blog-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   margin: 30px 0;
 }
-.product {
+.product,
+.blog {
   width: 357px;
   height: 530px;
   border: 1px solid #f5f5f5;
@@ -227,44 +237,59 @@ header .container {
 .star svg {
   font-size: 15px;
 }
-.product-btn {
+.product-btn,
+.blog-btn {
   float: right;
   color: #e02c6d;
   font-weight: 600;
   text-transform: capitalize;
+  transition: 0.5s;
+}
+.product-btn:hover,
+.blog-btn:hover {
+  animation: dance 1s 1;
+}
+@keyframes dance {
+  0% {
+    padding-left: 10px;
+  }
+  30% {
+    padding-left: 0px;
+  }
+  60% {
+    padding-left: 10px;
+  }
+  100% {
+    padding-left: 0px;
+  }
 }
 .product-btn svg {
   padding-left: 5px;
 }
-/* feature */
-.feature {
+/* blogs */
+.blogs {
+  padding: 50px 0;
 }
-.feature .container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.blog-container {
 }
-.feature-img {
+.blog {
+  height: 460px;
 }
-.feature-img img {
-  width: 404px;
-  height: 270px;
+.blog-img {
 }
-.feature-content {
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.feature-content h2 {
-  font-weight: bold;
-  font-size: 38px;
-  margin: 0;
+.blog-content {
 }
-.feature-content p {
-  font-weight: bold;
-  font-size: 16px;
-  color: #6c6c6c;
-  margin: 10px 0;
+.blog-content h2 {
 }
-.feature-btn {
-  border-radius: 0px !important;
+.blog-content p {
+}
+.blog-btn {
+  float: left;
 }
 /* footer */
 footer {
@@ -300,4 +325,106 @@ footer .container {
 }
 .social-media a svg {
   color: #fff;
+}
+
+/* =====================
+    Responsive css 
+=========================  */
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: 100% !important;
+  }
+  header {
+    padding: 50px 20px;
+  }
+  .hero {
+    padding: 0 20px;
+  }
+  .hero-image img {
+    animation: none;
+    width: 90%;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 14px;
+  }
+  .product-container,
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products,
+  .blogs {
+    margin: 0 50px;
+  }
+  .main-menu li {
+    padding: 8px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    margin-bottom: 150px;
+  }
+  .hero .container {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .hero-image {
+    order: 1;
+  }
+  .hero-content {
+    order: 2;
+  }
+  .main-menu {
+    display: none;
+  }
+  .brand-img ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product,
+  .blog {
+    width: 97%;
+    height: 95%;
+  }
+  .product-container,
+  .blog-container {
+    grid-gap: 52px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-left: 20%;
+  }
+  .product-container,
+  .blog-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -15px;
+  }
+  .hero-image img {
+    width: 80%;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    padding: 0 27%;
+  }
+  .brand-img ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 320px) {
 }
