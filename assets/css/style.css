@@ -74,8 +74,7 @@ header .container {
   font-weight: bold;
   font-size: 24px;
 }
-.main-menu ul {
-}
+
 .main-menu li {
   display: inline-block;
   padding: 10px 20px;
@@ -95,8 +94,7 @@ header .container {
   font-size: 16px;
   transition: 0.5s;
 }
-.main-menu a svg {
-}
+
 /* hero */
 .hero {
   margin-bottom: 120px;
@@ -143,10 +141,7 @@ header .container {
   animation: moveing 10s infinite;
 }
 /* band */
-.brand {
-}
-.brand .container {
-}
+
 .brand-img {
   padding: 42px 0;
   border-top: 2px solid #d1d1d138;
@@ -160,8 +155,7 @@ header .container {
 .brand-img ul li {
   text-align: center;
 }
-.brand-img li img {
-}
+
 /* products */
 .products {
   margin: 100px 0;
@@ -172,8 +166,7 @@ header .container {
   font-size: 28px;
   text-align: center;
 }
-.products .container {
-}
+
 .product-container,
 .blog-container {
   display: grid;
@@ -190,15 +183,13 @@ header .container {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
-.product-img {
-}
+
 .product-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.product-content {
-}
+
 .product-content h2 {
   font-weight: 500;
   font-size: 28px;
@@ -241,17 +232,20 @@ header .container {
 }
 .product-btn:hover,
 .blog-btn:hover {
-  animation: dance 1s 1;
+  animation: dance 2s 1;
 }
 @keyframes dance {
   0% {
-    padding-left: 10px;
+    padding-left: 0px;
   }
   30% {
-    padding-left: 0px;
+    padding-left: 5px;
   }
   60% {
     padding-left: 10px;
+  }
+  80% {
+    padding-left: 5px;
   }
   100% {
     padding-left: 0px;
@@ -261,16 +255,11 @@ header .container {
   padding-left: 5px;
 }
 /* feature  */
-.feature {
-}
+
 .feature .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.feature-img {
-}
-.feature-img img {
 }
 .feature-content {
   padding: 20px;
@@ -293,22 +282,13 @@ header .container {
 .blogs {
   padding: 50px 0;
 }
-.blog-container {
-}
 
-.blog-img {
-}
 .blog-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.blog-content {
-}
-.blog-content h2 {
-}
-.blog-content p {
-}
+
 .blog-btn {
   float: left;
 }
@@ -321,8 +301,7 @@ footer {
   text-align: center;
   height: 300px;
 }
-footer .container {
-}
+
 .footer-content {
   color: #fff;
 }
@@ -443,6 +422,12 @@ footer .container {
   }
   .feature-content h2 {
     font-size: 24px;
+  }
+  .hero {
+    margin-bottom: 0;
+  }
+  section {
+    margin: 5px 0;
   }
 }
 
