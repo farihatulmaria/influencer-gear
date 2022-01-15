@@ -337,7 +337,7 @@ footer {
   }
   .product,
   .blog {
-    width: 90%;
+    width: 88%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -438,7 +438,6 @@ footer {
   .product-container,
   .blog-container {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: -15px;
   }
   .hero-image img {
     width: 80%;
