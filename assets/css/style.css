@@ -46,6 +46,9 @@ button {
 button svg {
   margin: 0 5px;
 }
+section {
+  margin: 30px 0;
+}
 /* =====================
     main css 
 =========================  */
@@ -218,6 +221,36 @@ header .container {
 }
 .product-btn svg {
   padding-left: 5px;
+}
+/* feature */
+.feature {
+}
+.feature .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.feature-img {
+}
+.feature-img img {
+  width: 404px;
+  height: 270px;
+}
+.feature-content {
+}
+.feature-content h2 {
+  font-weight: bold;
+  font-size: 38px;
+  margin: 0;
+}
+.feature-content p {
+  font-weight: bold;
+  font-size: 16px;
+  color: #6c6c6c;
+  margin: 10px 0;
+}
+.feature-btn {
+  border-radius: 0px !important;
 }
 /* footer */
 footer {
