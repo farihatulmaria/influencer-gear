@@ -413,6 +413,9 @@ footer {
   .blog {
     box-shadow: none;
   }
+  .hero {
+    padding: 35px 20px;
+  }
 }
 
 @media screen and (max-width: 668px) {
