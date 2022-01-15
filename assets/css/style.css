@@ -400,11 +400,7 @@ footer {
   .brand-img ul {
     grid-template-columns: repeat(4, 1fr);
   }
-  .product,
-  .blog {
-    width: 97%;
-    height: 95%;
-  }
+
   .product-container,
   .blog-container {
     grid-gap: 52px;
@@ -412,6 +408,10 @@ footer {
   .logo {
     width: 100%;
     text-align: center;
+  }
+  .product,
+  .blog {
+    box-shadow: none;
   }
 }
 
