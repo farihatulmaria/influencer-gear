@@ -30,7 +30,6 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
 }
 button {
   padding: 8px 24px;
@@ -429,6 +428,9 @@ footer {
   }
   section {
     margin: 5px 0;
+  }
+  .container {
+    overflow: hidden;
   }
 }
 
